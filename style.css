@@ -1,0 +1,113 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+h1 {
+    color: #444;
+    margin: 20px 0;
+}
+
+/* Container styles */
+#add-note, #search-notes, #notes-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+#add-note {
+    border-top: 5px solid #4CAF50;
+}
+
+#search-notes {
+    border-top: 5px solid #2196F3;
+}
+
+#notes-list {
+    border-top: 5px solid #FF9800;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Note list styles */
+#notes {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notes li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#notes li h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+#notes li p {
+    margin: 0;
+    color: #666;
+}
+
+#notes li span {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    font-size: 12px;
+}

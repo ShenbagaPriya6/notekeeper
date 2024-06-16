@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NoteKeeper</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>NoteKeeper</h1>
+    <div id="add-note">
+        <h2>Add Note</h2>
+        <form id="noteForm" method="post" action="addNote.jsp">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" required></textarea><br>
+            <button type="submit">Add Note</button>
+        </form>
+    </div>
+    <div id="search-notes">
+        <h2>Search Notes</h2>
+        <form id="searchForm" method="get" action="searchNotes.jsp">
+            <label for="criteria">Search By:</label><br>
+            <select id="criteria" name="criteria">
+                <option value="date">Date</option>
+                <option value="title">Title</option>
+                <option value="subject">Subject</option>
+                <option value="content">Note Hint</option>
+            </select><br>
+            <label for="query">Enter Query:</label><br>
+            <input type="text" id="query" name="query" required><br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="notes-list" style="display: none;">
+        <h2>Notes</h2>
+        <ul id="notes">
+            <!-- Notes will be displayed here -->
+        </ul>
+        <button id="goBack">Go Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
