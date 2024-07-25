@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Fetch notes on page load
     fetchNotes();
-
-    // Function to fetch and display notes
     function fetchNotes() {
         fetch('fetchNotes.jsp')
             .then(response => response.json())
@@ -24,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const addNoteSection = document.getElementById('add-note');
         const searchNotesSection = document.getElementById('search-notes');
     
-        // Handle search form submission
         searchForm.addEventListener('submit', function (event) {
             event.preventDefault();
     
@@ -39,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .catch(error => console.error('Error:', error));
         });
     
-        // Function to display notes
+
         function displayNotes(notes) {
             notesUl.innerHTML = '';
             notes.forEach(note => {
@@ -69,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
             notesList.style.display = 'block';
         }
     
-        // Handle Go Back button click
-        goBackButton.addEventListener('click', function () {
+
+            goBackButton.addEventListener('click', function () {
             notesList.style.display = 'none';
             addNoteSection.style.display = 'block';
             searchNotesSection.style.display = 'block';
