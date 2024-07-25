@@ -74,13 +74,11 @@ The NoteKeeper application is a web-based tool designed for managing personal no
     - Enter the title, subject, and content.
     - Select the date.
     - Click "Add Note."
-
 ### Searching for Notes
 
 1. **Navigate to Search Notes Page:**
 
     ![Search Notes Page](screenshots/searchnote.jpg)
- 
 
 
 3. **Select Search Criteria:**
@@ -92,10 +90,9 @@ The NoteKeeper application is a web-based tool designed for managing personal no
 
 ## 💻 File Structure
 
-- `index.jsp`: Home page
+- `index.html`: Home page
 - `addNote.jsp`: Add new notes
 - `searchNotes.jsp`: Search notes
-- `quickSearchNotes.jsp`: Quick search functionality
 - `fetchNotes.jsp`: Fetch all notes
 - `style.css`: Styling for the application
 - `script.js`: JavaScript for dynamic behavior
