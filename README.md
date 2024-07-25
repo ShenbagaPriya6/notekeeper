@@ -80,8 +80,7 @@ The NoteKeeper application is a web-based tool designed for managing personal no
 1. **Navigate to Search Notes Page:**
 
     ![Search Notes Page](screenshots/searchnotes.jpg)
-   
-    ![Search Notes Page](screenshots/displaynotes.jpg)
+ 
 
 
 3. **Select Search Criteria:**
